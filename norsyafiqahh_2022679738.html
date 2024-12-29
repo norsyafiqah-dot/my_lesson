@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript</title>
+</head>
+<body>
+
+<h1>question 1</h1>
+<p id="content">Welcome to my page</p>
+<button type="button" onclick ='document.getElementById("content").innerHTML = "i love to learn web design"'>Click me</button>
+
+<h2>question 2</h2>
+<p id="style1">Hello! Welcome to faculty information management</p>
+
+<script>
+	function myStyle()
+    {
+    	document.getElementById("style1").style.
+    	fontSize="25px";
+    	document.getElementById("style1").style.
+        fontFamily="Courier New";
+        document.getElementById("style1").style.
+        color="blue";
+        document.getElementById("style1").style.
+        backgroundColor="yellow";
+    }
+</script>
+
+<button type="button" onclick= "myStyle()">Click Here!</button>
+
+<h3>question 3</h3>
+
+<script>
+	function bear(a)
+    {
+    	var pic; 
+    	if (a==0)
+    	{
+    		pic="images/cute_2.jpg"
+    	}
+    	else 
+    	{
+    		pic="images/image_5.jpg"
+    	}
+    	document.getElementById('gambar').src= pic;
+
+    }
+
+</script>
+
+
+
+
+<img src="images/cute_2.jpg" id="gambar" width="100" height="200">
+
+<p>
+	<button type="button" onclick="bear(1)">Cute mode</button>
+	<button type="button" onclick="bear(0)">Happy mode</button>
+</p>
+
+<h3>Question 4</h3>
+<button onclick="myAlertBox()">Click here!</button>
+
+<script>
+	function myAlertBox()
+	{
+		alert("Assalamualaikum, \nSelamat datang ke kelas IMS456, \nSemoga kita beroleh ilmu bermanfaat.")
+	}
+</script>
+
+<script>
+	{
+		alert("Assalamualaikum, \nSelamat datang ke kelas IMS456, \nSemoga kita beroleh ilmu bermanfaat.")
+	}
+</script>
+
+<h2>Question 5</h2>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.694772963497!2d102.27092387498666!3d5.756997594225392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1734227209165!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

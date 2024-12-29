@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML table</title>
+
+	<style>
+		table, tr, th, td
+		{
+			width: 100px;
+			border: 2px solid black;
+			border-collapse: collapse;
+			
+		}
+		th, td 
+		{
+			padding: 8px;
+			text-align: center;
+		}
+		tr:hover
+		{
+			background-color: yellow;
+		}
+		alternate-rows tr:nth-child(even)
+		{
+			background-color: hotpink;
+		} 
+		alternate-rows tr:nth-child(odd)
+		{
+			background-color: lightgray;
+		}
+		alternate-columns td:nth-child(even)
+		alternate-columns th:nth-child(even)
+		{
+			background-color: hotpink;
+		}
+		alternate-columns td:nth-child(odd)
+		alternate-columns th:nth-child(odd)
+		{
+			background-color: ;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+	<h1>Basic Table</h1>
+
+	<table style="width: 100%;text-align: center; background-color: white;">
+		<caption>List of students</caption>
+		<tr>
+			<th>Name</th>
+			<th>Phone number</th>
+			<th>Email</th>
+			<th>Course</th>
+		</tr>
+
+		<tr>
+			<td>Nora Ishak</td>
+			<td>0190990880</td>
+			<td>Nora_ishak@gmail.com</td>
+			<td>IM110</td>
+
+		</tr>
+			
+		<tr>
+			<td>Azmeer Ali</td>
+			<td>0112008800</td>
+			<td>Azmeer_ali@yahoo.com</td>
+			<td>IM110</td>
+		</tr>
+
+		<tr>
+			<td>Azrihan Abdullah</td>
+			<td>0177779009</td>
+			<td>arizan@gmail.com</td>
+			<td>IM245</td>
+		</tr>
+
+		<tr>
+			<td>Zainab Esah</td>
+			<td>0198880099</td>
+			<td>z_esah@yahoo.com</td>
+			<td>CS110</td>
+
+		</tr>
+
+	</table>
+
+
+
+
+
+<h1></h1>
+			<table style="width: 100%;text-align: center;">
+				<caption>List of images</caption>
+				<tr>
+					<th>Image</th>
+					<th>Description</th>
+				</tr>
+				
+				<tr>
+					<td><img src="images/image 6.jpg" style="height: 100px;"></td>
+					<td>This is a famous charachter in Kung Fu Panda and it is very funny.</td>
+
+				</tr>
+
+				<tr>
+					<td><img src="images/image 3.jpg" style="height: 100px;"></td>
+					<td>This is Detective Conan who is very handsome and smart.</td>
+				</tr>
+
+			</table>
+
+
+			
+
+
+
+
+
+
+
+<h2>rowspan</h2>
+
+			<table style="width: 100%;text-align: center;">
+			
+			<tr>
+				<th>Tea</th>
+				<th>Item</th>
+				<th>Price</th>
+				<th>Description</th>
+			</tr>
+				
+			<tr>
+				<th rowspan="3">Black Teas</th>
+				<td>A01</td>
+				<td>RM23.00/box</td>
+				<td>Darjeeling</td>
+			</tr>
+
+			<tr>
+				<td>A02</td>
+				<td>RM25.00/box</td>
+				<td>Breakfast Tea</td>
+			</tr>
+
+			<tr>
+				<td>A03</td>
+				<td>RM19.90/box</td>
+				<td>Earl Grey</td>
+			</tr>
+
+			<tr>
+			<th>White Teas</th>
+			<td>B01</td>
+			<td>RM29.90/box</td>
+			<td>White Tip</td>
+			</tr>
+
+			</table>
+
+
+
+
+
+			
+
+
+
+
+<h1>colspan</h1>
+			<table style="width: 100%;text-align: center;">
+			<tr>
+				<th colspan="2">Name</th>
+				<th>Age</th>
+			</tr>
+
+			<tr>
+				<td>Jackson</td>
+				<td>Jeffrey</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>Mark</td>
+				<td>Matthew</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<td>JayJay</td>
+				<td>Johnson Johnson</td>
+				<td>27</td>
+			</tr>
+
+			</table>
+
+
+
+
+
+
+
+
+
+
+
+
+			<h1></h1>
+			<table style="width: 100%;text-align: center;">
+
+
+		        <tr>
+					<th>No.</th>
+					<th>Fruit Name</th>
+					<th>Quantity</th>
+				</tr>
+
+				<tr:hover background-color: yellow>
+					<td>1</td>
+					<td>Grape</td>
+					<td>23 box</td>
+
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td>Pineapple</td>
+					<td>20 Box</td>
+				</tr>
+
+				<tr>
+					<td>3</td>
+					<td>Mango</td>
+					<td>30 box</td>
+				</tr>
+
+
+
+			</table>
+
+
+
+
+
+<h3></h3>
+<table style="width: 100%;text-align: center;">
+		
+		<tr>
+			<th>Name</th>
+			<th>Phone number</th>
+			<th>Email</th>
+			<th>Course</th>
+		</tr>
+
+		<tr>
+			<td>Nora Ishak</td>
+			<td>0190990880</td>
+			<td>Nora_ishak@gmail.com</td>
+			<td>IM110</td>
+
+		</tr>
+			
+		<tr>
+			<td>Azmeer Ali</td>
+			<td>0112008800</td>
+			<td>Azmeer_ali@yahoo.com</td>
+			<td>IM110</td>
+		</tr>
+
+		<tr>
+			<td>Azrihan Abdullah</td>
+			<td>0177779009</td>
+			<td>arizan@gmail.com</td>
+			<td>IM245</td>
+		</tr>
+
+		<tr>
+			<td>Zainab Esah</td>
+			<td>0198880099</td>
+			<td>z_esah@yahoo.com</td>
+			<td>CS110</td>
+		</tr>
+
+		</tr>
+
+	</table>
+
+
+
+
+
+
+
+<h3></h3>
+<table style="width: 100%;text-align: center; background-color: lightpink;">
+
+		
+		<tr>
+
+			<th>Name</th>
+			<th>Phone number</th>
+			<th>Email</th>
+			<th>Course</th>
+		</tr>
+
+		<tr>
+			<td>Nora Ishak</td>
+			<td>0190990880</td>
+			<td>Nora_ishak@gmail.com</td>
+			<td>IM110</td>
+
+		</tr>
+			
+		<tr>
+			<td>Azmeer Ali</td>
+			<td>0112008800</td>
+			<td>Azmeer_ali@yahoo.com</td>
+			<td>IM110</td>
+		</tr>
+
+		<tr>
+			<td>Azrihan Abdullah</td>
+			<td>0177779009</td>
+			<td>arizan@gmail.com</td>
+			<td>IM245</td>
+		</tr>
+
+		<tr>
+			<td>Zainab Esah</td>
+			<td>0198880099</td>
+			<td>z_esah@yahoo.com</td>
+			<td>CS110</td>
+		</tr>
+
+		</tr>
+
+	</table>
+
+
+
+
+
+
+
+<h3></h3>
+<table style="width:100%; text-align: center; background-color: beige;">
+		
+		<tr>
+			<th>Name</th>
+			<th>Phone number</th>
+			<th>Email</th>
+			<th>Course</th>
+		</tr>
+
+		<tr>
+			<td>Nora Ishak</td>
+			<td>0190990880</td>
+			<td>Nora_ishak@gmail.com</td>
+			<td>IM110</td>
+
+		</tr>
+			
+		<tr>
+			<td>Azmeer Ali</td>
+			<td>0112008800</td>
+			<td>Azmeer_ali@yahoo.com</td>
+			<td>IM110</td>
+		</tr>
+
+		<tr>
+			<td>Azrihan Abdullah</td>
+			<td>0177779009</td>
+			<td>arizan@gmail.com</td>
+			<td>IM245</td>
+		</tr>
+
+		<tr>
+			<td>Zainab Esah</td>
+			<td>0198880099</td>
+			<td>z_esah@yahoo.com</td>
+			<td>CS110</td>
+		</tr>
+
+		</tr>
+
+	</table>
+
+</body>
+</html>
